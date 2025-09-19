@@ -20,4 +20,4 @@ RUN chmod +x ./bin/reef-node
 EXPOSE 30333 9944
 
 # Default command: bash (so you can exec into it and run reef-node manually)
-CMD ["/bin/bash"]
+CMD ["bash", "-c", "while true; do sleep 1000; done"]
